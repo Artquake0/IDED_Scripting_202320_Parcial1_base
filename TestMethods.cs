@@ -18,7 +18,10 @@ namespace TestProject1
             Stack<int> result = null;
 
             return result;
+
         }
+
+
 
         internal static Dictionary<int, EValueType> FillDictionaryFromSource(int[] sourceArr)
         {
