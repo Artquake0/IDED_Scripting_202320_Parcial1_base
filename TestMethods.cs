@@ -127,9 +127,9 @@ namespace TestProject1
         {
             int count = 0;
 
-            foreach (EValueType valor in sourceDict.Values)
+            foreach (EValueType value in sourceDict.Values)
             {
-                if (valor == type)
+                if (value == type)
                 {
                     count++;
                 }
@@ -141,13 +141,13 @@ namespace TestProject1
         internal static Dictionary<int, EValueType> SortDictionaryRegistries(Dictionary<int, EValueType> sourceDict)
         {
             Dictionary<int, EValueType> result = new Dictionary<int, EValueType>();
-            List<int> llaves = new List<int>(sourceDict.Keys);
-            llaves.Sort();
-            llaves.Reverse();
+            List<int> Keys = new List<int>(sourceDict.Keys);
+            Keys.Sort();
+            Keys.Reverse();
 
-            foreach (int llave in llaves)
+            foreach (int key in Keys)
             {
-                result[llave] = sourceDict[llave];
+                result[key] = sourceDict[key];
             }
 
             return result;
